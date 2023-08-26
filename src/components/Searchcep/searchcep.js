@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 // import './App.css';
 
-function App() {
+function searchcep() {
   const [streetName, setStreetName] = useState('');
   const [addresses, setAddresses] = useState([]);
   const [errorMessage, setErrorMessage] = useState('');
@@ -70,4 +70,4 @@ function App() {
   );
 }
 
-export default App;
+export default searchcep;

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 
-function App() {
+function WeatherDisplay() {
   const [data, setData] = useState({})
   const [location, setLocation] = useState('')
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=7113d500005c402565c5057cfd518400`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&WeatherDisplayid=7113d500005c402565c5057cfd518400`;
 
   const searchLocation = (event) => {
     if (event.key === 'Enter') {
@@ -67,4 +67,4 @@ function App() {
   );
 }
 
-export default App;
+export default WeatherDisplay;

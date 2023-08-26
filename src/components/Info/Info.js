@@ -5,7 +5,7 @@ import WeatherCard from '../WeatherCard.js/WeatherCard';
 import WeatherDisplay from '../WeatherDisplay/WeatherDisplay';
 import Searchcep from '../Searchcep/searchcep';
 
-function HomePage() {
+function Info() {
   return (
     <div className="min-h-screen bg-gray-200">
       <div className="flex justify-center items-center h-full">
@@ -23,4 +23,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Info;
