@@ -22,8 +22,11 @@ function App() {
       console.error('Erro ao buscar endereços:', error);
       setErrorMessage('Erro ao buscar endereços');
     }
-  };
+  }; 
 
+
+
+  
   return (
     <div className="App">
       <h1>Busca de Endereço por Nome de Rua</h1>
