@@ -18,16 +18,18 @@ function App() {
   }
 
   return (
-    <div className="app">
-      <div className="search">
+    <div>
+      <div  >
         <input
+          className="w-full h-20 px-4 py-2 rounded-lg border focus:outline-none focus:ring focus:border-blue-300 mt-10"
           value={location}
           onChange={event => setLocation(event.target.value)}
           onKeyPress={searchLocation}
-          placeholder='Enter Location'
-          type="text" />
+          placeholder='Digite o nome da sua Cidade'
+          type="text"
+          />
       </div>
-      <div className="container">
+      <div className="text-lg">
         <div className="top">
           <div className="location">
             <p>{data.name}</p>

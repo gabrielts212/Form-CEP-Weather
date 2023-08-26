@@ -30,30 +30,42 @@ function App() {
 
   
   return (
-    <div className="App">
-      <h1>Busca de Endereço por Nome de Rua</h1>
+    <div  className="w-full h-100% px-4 py-2 rounded-lg border focus:outline-none focus:ring focus:border-blue-300 mt-10 min-h-screen bg-[rgb(27,27,27)]">
+      <h1  className="text-xl font-semibold">Digite um Endereço</h1>
       <input
         type="text"
-        placeholder="Digite o nome da rua"
+        placeholder="Digite o nome da Rua"
         value={streetName}
         onChange={(e) => setStreetName(e.target.value)}
-      />
-      <button onClick={handleSearch}>Buscar Endereços</button>
+        className="w-full h-20 px-4 py-2 rounded-lg border focus:outline-none focus:ring focus:border-blue-300 mt-10 text-2xl bg-gray-600 text-white"
+        />
+      <div className="flex">
+
+     
+      <div className="max-width-80rem ">
+
+      <button className="px-4 py-2 rounded-full bg-blue-500 text-white mt-4 " onClick={handleSearch}>Buscar Endereços</button>
+      </div>
+      </div>
+      <div className="max-width-80rem mx-auto bg-white rounded-lg overflow-hidden shadow-lg mt-5 bg-[rgb(37,40,42)]" >
+
       {errorMessage && <p>{errorMessage}</p>}
       {addresses.length > 0 && (
-        <div>
-          <h2>Resultados:</h2>
-          <ul>
+        <div >
+          <h2  className="text-slg font-semibold mb-2 bg-blue-500 text-white p-2" >Resultados  </h2>
+          
+          <ul className="w-full p-2">
             {addresses.map((address, index) => (
-              <li key={index}>
-                <p>Rua: {address.address.road}</p>
-                <p>Bairro: {address.address.suburb}</p>
-                <p>CEP: {address.address.postcode}</p>
+              <li key={index}  >
+                <p   className="text-lg font-semibold mb-2 text-red-600">Rua: {address.address.road}</p>
+                <p  className="text-lg font-semibold mb-2">Bairro: {address.address.suburb}</p>
+                <p  className="text-base border-b-2">CEP: {address.address.postcode}</p>
               </li>
             ))}
           </ul>
         </div>
       )}
+      </div>
     </div>
   );
 }

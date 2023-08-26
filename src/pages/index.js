@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <div>
 <Header/>
-<WeatherCard/>
+{/* <WeatherCard/> */}
 <Info/>
-<WeatherDisplay/>
+{/* <WeatherDisplay/> */}
 <Footer/>
     </div>
   )
