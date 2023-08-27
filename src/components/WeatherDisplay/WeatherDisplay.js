@@ -54,18 +54,18 @@ const Weather = () => {
       )
     )}
 
-    <div className="flex justify-center items-center p-8">
-      <Link href="/cep">
-        <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded mx-2 md:mx-5 rounded-full">
-          Não sei meu cep
-        </button>
-      </Link>
-      <Link href="/contact">
-        <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded mx-2 md:mx-5 rounded-full">
-          Página de contato
-        </button>
-      </Link>
-    </div>
+   <div className="flex flex-col md:flex-row justify-center items-center p-8">
+  <Link href="/cep">
+    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded mb-3 md:mb-0 md:mr-2 md:rounded-full text-2xl font-bold w-full md:w-auto">
+      Não sei meu cep
+    </button>
+  </Link>
+  <Link href="/contact">
+    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded md:ml-2 md:rounded-full text-2xl font-bold w-full md:w-auto">
+      Página de contato
+    </button>
+  </Link>
+</div>
   </div>
 </div>
 

@@ -31,20 +31,20 @@ function searchcep() {
   
   return (
     <div  className="w-full h-100% px-4 py-2  focus:outline-none focus:ring focus:border-blue-300 mt-10 min-h-screen bg-[rgb(27,27,27)]">
-      <h1  className="text-2xl font-bold mb-4">Digite um Endereço</h1>
-      <input
-        type="text"
-        placeholder="Digite o nome da Rua"
-        value={streetName}
-        onChange={(e) => setStreetName(e.target.value)}
-        className="w-full h-20 px-4 py-2 rounded-lg border focus:outline-none focus:ring focus:border-blue-300 mt-10 text-2xl bg-gray-600 text-white"
-        />
+      <h1  className="text-2xl font-bold mb-4 font-bold ">Digite um Endereço</h1>
+     <input
+  type="text"
+  placeholder="Digite o nome da Rua"
+  value={streetName}
+  onChange={(e) => setStreetName(e.target.value)}
+  className="w-full h-16 md:h-20 px-4 py-2 rounded-lg border focus:outline-none focus:ring focus:border-blue-300 mt-10 text-2xl bg-gray-600 text-white"
+/>
       <div className="flex">
 
      
       <div className="max-width-80rem ">
 
-      <button className="px-4 py-2 rounded-full bg-blue-500 text-white mt-4 " onClick={handleSearch}>Buscar Endereços</button>
+      <button className="px-4 py-2 rounded-full bg-blue-500 text-white mt-4 text-1xl font-bold " onClick={handleSearch}>Buscar Endereços</button>
       </div>
       </div>
       <div className="max-width-80rem mx-auto bg-white rounded-lg overflow-hidden shadow-lg mt-5 bg-[rgb(37,40,42)]" >
