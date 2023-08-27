@@ -108,7 +108,7 @@ const Form = () => {
           type="submit"
           className="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-600 w-full text-2xl font-bold "
         >
-          Submit
+          Enviar
         </button>
       </form>
     </div>
