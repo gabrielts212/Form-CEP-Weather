@@ -37,14 +37,14 @@ const Weather = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-blue-200">
-      <div className="bg-white p-8 rounded shadow-md">
+    <div className="min-h-screen flex items-center justify-center bg-[rgb(27,27,27)]">
+      <div className=" p-8 rounded shadow-md bg-gray-600">
         <h1 className="text-2xl font-bold mb-4">Clima em Sua Localização</h1>
         {loading ? (
           <p>Carregando...</p>
         ) : (
           weatherData.main && (
-            <div>
+            <div >
               <h2 className="text-xl mb-2">{weatherData.name}</h2>
               <p className="text-lg">Temperatura: {weatherData.main.temp.toFixed(1)}°C</p>
               <p className="text-lg">Clima: {weatherData.weather[0].description}</p>

@@ -33,7 +33,7 @@ function ContactForm() {
   return (
     
     <div className="max-w-md  mx-auto p-5 min-h-screen flex items-center " >
-      <form onSubmit={handleSubmit} className="space-y-10  p-7 bg-gray-100 rounded-lg shadow-md ">
+      <form onSubmit={handleSubmit} className="space-y-10  p-7 bg-[rgb(27,27,27)] rounded-lg shadow-md  ">
       <h1 className="text-xl font-semibold mb-4">Formulário de Contato</h1>
         <div>
           <label htmlFor="nameInput" className="block font-medium mb-1">Nome:</label>
@@ -42,17 +42,17 @@ function ContactForm() {
             id="nameInput"
             value={name}
             onChange={handleNameChange}
-            className=" p-2 w-full text-black rounded-full p-5"
+            className=" p-2 w-full text-white  rounded-full p-5 bg-gray-600 " 
           />
         </div>
         <div>
-          <label htmlFor="emailInput" className="block font-medium mb-1">E-mail:</label>
+          <label htmlFor="emailInput" className="block font-medium mb-1 ">E-mail:</label>
           <input
             type="email"
             id="emailInput"
             value={email}
             onChange={handleEmailChange}
-            className="  w-full text-black rounded-full p-5 "
+            className="  w-full text-white rounded-full p-5 bg-gray-600 "
           />
         </div>
         <div>
@@ -61,7 +61,7 @@ function ContactForm() {
             id="messageInput"
             value={message}
             onChange={handleMessageChange}
-            className="border rounded p-2 w-full h-24 text-black rounded-full p-3"
+            className="border rounded p-2 w-full h-24 text-white  rounded-full p-3 bg-gray-600"
           />
         </div>
         <div>
