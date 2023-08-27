@@ -1,24 +1,11 @@
-// pages/index.js
-import React from 'react';
-import Header from '../Header/Header';
-import WeatherCard from '../WeatherCard.js/WeatherCard';
-import WeatherDisplay from '../WeatherDisplay/WeatherDisplay';
-import Searchcep from '../Searchcep/searchcep';
+import React from "react";
+import WeatherDisplay from "../WeatherDisplay/WeatherDisplay";
 
 function Info() {
   return (
     <div className="min-h-screen bg-[rgb(27,27,27)]">
-      <div className="flex justify-center items-center h-full bg-[rgb(27,27,27)]">
-        {/* <WeatherCard
-          city="Nome da Cidade"
-          temperature={25}
-          description="Céu limpo"
-        /> */}
-      </div>
+      <div className="flex justify-center items-center h-full bg-[rgb(27,27,27)]"></div>
       <WeatherDisplay />
-      {/* <Header /> */}
-        {/* <WeatherDisplay /> */}
-        {/* <Searchcep/> */}
     </div>
   );
 }
