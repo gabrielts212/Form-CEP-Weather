@@ -30,7 +30,7 @@ function searchcep() {
 
   
   return (
-    <div  className="w-full h-100% px-4 py-2 rounded-lg border focus:outline-none focus:ring focus:border-blue-300 mt-10 min-h-screen bg-[rgb(27,27,27)]">
+    <div  className="w-full h-100% px-4 py-2  focus:outline-none focus:ring focus:border-blue-300 mt-10 min-h-screen bg-[rgb(27,27,27)]">
       <h1  className="text-xl font-semibold">Digite um Endereço</h1>
       <input
         type="text"
@@ -51,12 +51,12 @@ function searchcep() {
 
       {errorMessage && <p>{errorMessage}</p>}
       {addresses.length > 0 && (
-        <div >
+        <div  className="bg-gray-600">
           <h2  className="text-slg font-semibold mb-2 bg-blue-500 text-white p-2" >Resultados  </h2>
           
-          <ul className="w-full p-2">
+          <ul >
             {addresses.map((address, index) => (
-              <li key={index}  >
+              <li key={index} >
                 <p   className="text-lg font-semibold mb-2 text-red-600">Rua: {address.address.road}</p>
                 <p  className="text-lg font-semibold mb-2">Bairro: {address.address.suburb}</p>
                 <p  className="text-base border-b-2">CEP: {address.address.postcode}</p>

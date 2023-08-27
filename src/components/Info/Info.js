@@ -7,17 +7,17 @@ import Searchcep from '../Searchcep/searchcep';
 
 function Info() {
   return (
-    <div className="min-h-screen bg-gray-200">
-      <div className="flex justify-center items-center h-full">
+    <div className="min-h-screen bg-[rgb(27,27,27)]">
+      <div className="flex justify-center items-center h-full bg-[rgb(27,27,27)]">
         {/* <WeatherCard
           city="Nome da Cidade"
           temperature={25}
           description="Céu limpo"
         /> */}
       </div>
-      {/* <WeatherDisplay /> */}
+      <WeatherDisplay />
       {/* <Header /> */}
-        <WeatherDisplay />
+        {/* <WeatherDisplay /> */}
         {/* <Searchcep/> */}
     </div>
   );
