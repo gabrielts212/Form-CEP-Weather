@@ -1,87 +1,97 @@
 import React, { useState } from 'react';
 
-function ContactForm() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [selectedFile, setSelectedFile] = useState(null);
+const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+    file: null
+  });
 
-  const handleNameChange = (event) => {
-    setName(event.target.value);
+  const handleInputChange = event => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
   };
 
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
+  const handleFileChange = event => {
+    setFormData({
+      ...formData,
+      file: event.target.files[0]
+    });
   };
 
-  const handleMessageChange = (event) => {
-    setMessage(event.target.value);
-  };
-
-  const handleFileChange = (event) => {
-    setSelectedFile(event.target.files[0]);
-  };
-
-  const handleSubmit = (event) => {
+  const handleSubmit = event => {
     event.preventDefault();
-    if (name && email && message && selectedFile) {
-   
-      console.log('Enviando dados e arquivo:', { name, email, message, selectedFile });
-    }
+    console.log(formData);
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+      file: null
+    });
   };
 
   return (
-    
-    <div className="max-w-md  mx-auto p-5 min-h-screen flex items-center " >
-      <form onSubmit={handleSubmit} className="space-y-10  p-7 bg-[rgb(27,27,27)] rounded-lg shadow-md  ">
-      <h1 className="text-xl font-semibold mb-4">Formulário de Contato</h1>
+    <div className="max-w-md mx-auto p-5 min-h-screen flex items-center">
+      <form onSubmit={handleSubmit} className="space-y-10 p-7 bg-[rgb(27,27,27)] rounded-lg shadow-md w-full">
+        <h1 className="text-3xl font-bold mb-4">Formulário de Contato</h1>
         <div>
-          <label htmlFor="nameInput" className="block font-medium mb-1">Nome:</label>
+          <label htmlFor="name" className="block font-medium text-2xl font-bold mb-2">Nome:</label>
           <input
             type="text"
-            id="nameInput"
-            value={name}
-            onChange={handleNameChange}
-            className=" p-2 w-full text-white  rounded-full p-5 bg-gray-600 " 
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleInputChange}
+            className="p-4  w-full text-white rounded-full bg-gray-600 text-2xl"
           />
         </div>
+
         <div>
-          <label htmlFor="emailInput" className="block font-medium mb-1 ">E-mail:</label>
+          <label htmlFor="email" className="block font-medium text-2xl font-bold mb-2">E-mail:</label>
           <input
             type="email"
-            id="emailInput"
-            value={email}
-            onChange={handleEmailChange}
-            className="  w-full text-white rounded-full p-5 bg-gray-600 "
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
+            className="p-4 w-full text-white rounded-full bg-gray-600 text-2xl"
           />
         </div>
         <div>
-          <label htmlFor="messageInput" className="block font-medium mb-1">Mensagem:</label>
+          <label htmlFor="message" className="block font-medium text-2xl font-bold mb-2">Mensagem:</label>
           <textarea
-            id="messageInput"
-            value={message}
-            onChange={handleMessageChange}
-            className="border rounded p-2 w-full h-24 text-white  rounded-full p-3 bg-gray-600"
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleInputChange}
+            className="border rounded p-2 w-full  h-40 text-white bg-gray-600 text-2xl"
           />
         </div>
         <div>
-          <label htmlFor="fileInput" className="block font-medium mb-1">Anexar Arquivo:</label>
+          <label htmlFor="file" className="block cursor-pointer border rounded p-2 w-full text-center bg-blue-500 text-white hover:bg-blue-600 text-2xl font-bold mb-2">
+            Selecionar Arquivo
+          </label>
           <input
             type="file"
-            id="fileInput"
+            id="file"
+            name="file"
             onChange={handleFileChange}
-            className="border rounded p-2 w-full"
+            className="hidden"
           />
         </div>
         <button
           type="submit"
-          className="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-600 w-full "
+          className="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-600 w-full text-2xl font-bold mb-2"
         >
-          Enviar
+          Submit
         </button>
       </form>
     </div>
   );
-}
+};
 
 export default ContactForm;

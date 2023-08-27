@@ -31,7 +31,7 @@ function searchcep() {
   
   return (
     <div  className="w-full h-100% px-4 py-2  focus:outline-none focus:ring focus:border-blue-300 mt-10 min-h-screen bg-[rgb(27,27,27)]">
-      <h1  className="text-xl font-semibold">Digite um Endereço</h1>
+      <h1  className="text-2xl font-bold mb-4">Digite um Endereço</h1>
       <input
         type="text"
         placeholder="Digite o nome da Rua"

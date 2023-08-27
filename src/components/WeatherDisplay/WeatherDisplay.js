@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Link from 'next/link';
+// import { Link } from 'react-router-dom';
 
 const Weather = () => {
   const [weatherData, setWeatherData] = useState({});
@@ -37,22 +39,37 @@ const Weather = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[rgb(27,27,27)]">
-      <div className=" p-8 rounded shadow-md bg-gray-600">
-        <h1 className="text-2xl font-bold mb-4">Clima em Sua Localização</h1>
-        {loading ? (
-          <p>Carregando...</p>
-        ) : (
-          weatherData.main && (
-            <div >
-              <h2 className="text-xl mb-2">{weatherData.name}</h2>
-              <p className="text-lg">Temperatura: {weatherData.main.temp.toFixed(1)}°C</p>
-              <p className="text-lg">Clima: {weatherData.weather[0].description}</p>
-            </div>
-          )
-        )}
-      </div>
+  <div className="min-h-screen flex items-center justify-center bg-[rgb(27,27,27)]">
+  <div className="p-12 rounded shadow-md bg-gray-600">
+    <h1 className="text-4xl font-bold mb-6">Clima em Sua Localização</h1>
+    {loading ? (
+      <p>Carregando...</p>
+    ) : (
+      weatherData.main && (
+        <div>
+          <h2 className="text-3xl mb-4">{weatherData.name}</h2>
+          <p className="text-2xl">Temperatura: {weatherData.main.temp.toFixed(1)}°C</p>
+          <p className="text-2xl">Clima: {weatherData.weather[0].description}</p>
+        </div>
+      )
+    )}
+
+    <div className="flex justify-center items-center p-8">
+      <Link href="/cep">
+        <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded mx-2 md:mx-5 rounded-full">
+          Não sei meu cep
+        </button>
+      </Link>
+      <Link href="/contact">
+        <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded mx-2 md:mx-5 rounded-full">
+          Página de contato
+        </button>
+      </Link>
     </div>
+  </div>
+</div>
+
+
   );
 };
 
