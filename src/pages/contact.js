@@ -5,9 +5,12 @@ import Form from '@/components/Form/Form'
 import Headerform from '@/components/Headerform/Headerform'
 const contact = () => {
   return (
-    <div>
+    <div   >
 <Headerform/>
+<div className="space-y-10 p-7 bg-[rgb(27,27,27)]" >
+
 <Form/>
+</div>
 <Footer/>
     </div>
   )
