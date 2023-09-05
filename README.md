@@ -1,5 +1,7 @@
 1- Pagina 1 que exibe o clima do do estado que a pessoa está 
+
 2- Pagina 2 com uma pagina de busca de cep por nome da rua que te devolve o numero do cep e o nome da rua
+
 3- Pagina 3 formulario que envia dados pelo console dados como "email, arquivos, nome" e limpar o form ao enviar 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
