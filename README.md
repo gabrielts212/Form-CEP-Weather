@@ -1,4 +1,4 @@
-1- Pagina 1 que exibe o clima do do estado que a pessoa está 
+1- Pagina 1 que exibe o clima  do estado em que a pessoa está 
 
 2- Pagina 2 com uma pagina de busca de cep por nome da rua que te devolve o numero do cep e o nome da rua
 
