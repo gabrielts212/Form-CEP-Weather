@@ -11,7 +11,7 @@ Exibe o estado do usuário com base em sua localização.
 Fornece informações atualizadas sobre o clima desse estado, incluindo temperatura, condições meteorológicas, umidade, etc.
 Instruções de Uso:
 
-Ao acessar a página, o sistema detectará automaticamente a localização do usuário (com permissão) ou permitirá ao usuário inserir manualmente o estado.
+Ao acessar a página, o sistema detectará automaticamente a localização do usuário.
 Os dados meteorológicos serão exibidos na página, atualizados em tempo real ou com base na pesquisa manual do estado.
 Página 2: Busca de CEP
 Descrição:
