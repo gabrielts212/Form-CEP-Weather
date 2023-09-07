@@ -26,6 +26,7 @@ Instruções de Uso:
 Na página de busca de CEP, insira o nome da rua na barra de pesquisa.
 Clique no botão "Pesquisar".
 Os resultados da pesquisa, incluindo o número do CEP e o nome da rua, serão exibidos na página.
+
 Página 3: Formulário de Envio de Dados
 Descrição:
 A terceira página deste projeto permite que os usuários preencham um formulário com informações pessoais e enviem os dados para o console.
@@ -42,7 +43,7 @@ Clique no botão "Enviar" para enviar os dados.
 Os dados inseridos serão exibidos no console do navegador.
 Clique no botão "Limpar" para redefinir o formulário após o envio.
 Tecnologias Utilizadas:
-HTML, CSS e JavaScript para a criação e estilização das páginas.
+React, Tailwind e JavaScript para a criação e estilização das páginas.
 APIs de clima para obter informações meteorológicas (por exemplo, OpenWeatherMap).
 APIs de consulta de CEP para buscar informações de endereços (por exemplo, ViaCEP).
 Manipulação do DOM para interação com o usuário e exibição de resultados.
