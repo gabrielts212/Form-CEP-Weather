@@ -11,9 +11,12 @@ const Headercep = () => {
           </Link>
         </div>
         <div>
-          <h1 className="text-2xl font-semibold text-3xl font-bold ">
+        <Link href="/cep">
+        <h1 className="text-2xl font-semibold text-3xl font-bold ">
             Busca CEP
           </h1>
+          </Link>
+         
         </div>
         <div className="text-blue-500  ">
           <p></p>
