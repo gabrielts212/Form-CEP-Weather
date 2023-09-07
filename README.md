@@ -13,7 +13,9 @@ Instruções de Uso:
 
 Ao acessar a página, o sistema detectará automaticamente a localização do usuário.
 Os dados meteorológicos serão exibidos na página, atualizados em tempo real ou com base na pesquisa manual do estado.
+
 Página 2: Busca de CEP
+
 Descrição:
 A segunda página deste projeto permite que os usuários pesquisem o CEP de uma rua com base no nome da rua.
 
