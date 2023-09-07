@@ -47,7 +47,7 @@ const WeatherDisplay = () => {
           weatherData.main && (
             <div>
               <h2 className="text-3xl mb-4">{weatherData.name}</h2>
-              
+
               <p className="text-2xl">
                 Temperatura: {weatherData.main.temp.toFixed(1)}°C
               </p>

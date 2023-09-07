@@ -28,15 +28,16 @@ function SearchCep() {
   return (
     <div className="min-h-screen bg-[rgb(27,27,27)] p-4 pt-20">
       <div>
-
-      <label className="text-2xl font-bold mb-4 text-white ">Digite um Endereço</label>
-      <input
-        type="text"
-        placeholder="Digite o nome da Rua"
-        value={streetName}
-        onChange={(e) => setStreetName(e.target.value)}
-        className="w-full h-20 px-4 py-2 rounded-lg border bg-gray-600 text-white text-2xl focus:outline-none focus:ring focus:border-blue-300"
-      />
+        <label className="text-2xl font-bold mb-4 text-white ">
+          Digite um Endereço
+        </label>
+        <input
+          type="text"
+          placeholder="Digite o nome da Rua"
+          value={streetName}
+          onChange={(e) => setStreetName(e.target.value)}
+          className="w-full h-20 px-4 py-2 rounded-lg border bg-gray-600 text-white text-2xl focus:outline-none focus:ring focus:border-blue-300"
+        />
       </div>
       <div className="flex justify-center">
         <button
@@ -47,9 +48,7 @@ function SearchCep() {
         </button>
       </div>
       <div className="bg-[rgb(37,40,42)] rounded-lg overflow-hidden shadow-lg mt-5">
-        {errorMessage && (
-          <p className="text-red-500 p-4">{errorMessage}</p>
-        )}
+        {errorMessage && <p className="text-red-500 p-4">{errorMessage}</p>}
         {addresses.length > 0 && (
           <div>
             <h2 className="bg-blue-500 text-white text-2xl font-bold p-4">

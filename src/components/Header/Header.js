@@ -11,12 +11,11 @@ const Header = () => {
           </Link>
         </div>
         <div>
-        <Link href="/">
-        <h1 className="text-2xl font-semibold text-3xl font-bold ">
-            Previsão do Tempo
-          </h1>
+          <Link href="/">
+            <h1 className="text-2xl font-semibold text-3xl font-bold ">
+              Previsão do Tempo
+            </h1>
           </Link>
-         
         </div>
         <div className="text-blue-500  ">
           <p></p>

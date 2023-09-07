@@ -5,7 +5,7 @@ const Form = () => {
     name: "",
     email: "",
     message: "",
-    file:  "",
+    file: "",
   });
 
   const handleInputChange = (event) => {
