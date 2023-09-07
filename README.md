@@ -1,9 +1,7 @@
 Documentação do Projeto: Clima, CEP e Formulário
 
 
-Página 1: Clima do Estado
-Descrição:
-A primeira página deste projeto exibe informações sobre o clima do estado em que o usuário está localizado.
+Página 1: Clima do Estado Descrição: A primeira página deste projeto exibe informações sobre o clima do estado em que o usuário está localizado.
 
 Recursos:
 
@@ -14,10 +12,7 @@ Instruções de Uso:
 Ao acessar a página, o sistema detectará automaticamente a localização do usuário.
 Os dados meteorológicos serão exibidos na página, atualizados em tempo real ou com base na pesquisa manual do estado.
 
-Página 2: Busca de CEP
-
-Descrição:
-A segunda página deste projeto permite que os usuários pesquisem o CEP de uma rua com base no nome da rua.
+Página 2: Busca de CEP Descrição:A segunda página deste projeto permite que os usuários pesquisem o CEP de uma rua com base no nome da rua.
 
 Recursos:
 
@@ -29,9 +24,7 @@ Na página de busca de CEP, insira o nome da rua na barra de pesquisa.
 Clique no botão "Pesquisar".
 Os resultados da pesquisa, incluindo o número do CEP e o nome da rua, serão exibidos na página.
 
-Página 3: Formulário de Envio de Dados
-Descrição:
-A terceira página deste projeto permite que os usuários preencham um formulário com informações pessoais e enviem os dados para o console.
+Página 3: Formulário de Envio de Dados Descrição: A terceira página deste projeto permite que os usuários preencham um formulário com informações pessoais e enviem os dados para o console.
 
 Recursos:
 
