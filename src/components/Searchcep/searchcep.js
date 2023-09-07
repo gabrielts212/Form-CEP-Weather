@@ -26,8 +26,10 @@ function SearchCep() {
   };
 
   return (
-    <div className="min-h-screen bg-[rgb(27,27,27)] p-4">
-      <h1 className="text-2xl font-bold mb-4 text-white">Digite um Endereço</h1>
+    <div className="min-h-screen bg-[rgb(27,27,27)] p-4 pt-20">
+      <div>
+
+      <label className="text-2xl font-bold mb-4 text-white ">Digite um Endereço</label>
       <input
         type="text"
         placeholder="Digite o nome da Rua"
@@ -35,9 +37,10 @@ function SearchCep() {
         onChange={(e) => setStreetName(e.target.value)}
         className="w-full h-20 px-4 py-2 rounded-lg border bg-gray-600 text-white text-2xl focus:outline-none focus:ring focus:border-blue-300"
       />
+      </div>
       <div className="flex justify-center">
         <button
-          className="px-6 py-3 rounded-full bg-blue-500 text-white mt-4 text-xl font-bold"
+          className="px-6 py-3 rounded-full bg-blue-500 text-white mt-4 text-xl font-bold hover:bg-blue-600"
           onClick={handleSearch}
         >
           Buscar Endereços
