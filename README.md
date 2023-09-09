@@ -27,10 +27,6 @@ Instruções de Uso: Na página de formulário, preencha os campos com as inform
 Clique no botão "Enviar" para enviar os dados.
 Os dados inseridos serão exibidos no console do navegador.
 Clique no botão "Limpar" para redefinir o formulário após o envio.
-
-Tecnologias Utilizadas: React, Tailwind e JavaScript para a criação e estilização das páginas.
-APIs de clima para obter informações meteorológicas (por exemplo, OpenWeatherMap).
-APIs de consulta de CEP para buscar informações de endereços (por exemplo, ViaCEP).
 Manipulação do DOM para interação com o usuário e exibição de resultados.
 Manipulação de eventos para processar formulários e ações do usuário.
 
